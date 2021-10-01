@@ -1,3 +1,7 @@
+# 투명 망토 문제 (Bridge and Torch Problem)
+# 코드 자체보다는 알고리즘이 중요한 문제라서 따로 주석은 안 달았고, 대신 알고리즘을 설명하는 순서도를 그림
+# 알고리즘이 왜 타당한지는 https://link.springer.com/article/10.1007/s43069-020-00022-3 참고 (논문)
+
 entrance = list(map(int,input().split()))
 entrance.sort()
 time = 0
@@ -47,7 +51,7 @@ while(len(entrance) != 0):
     tick += 1
     entrance.sort()
     dormitory.sort()
-    print(entrance, dormitory, time, tick%2) # 디버깅용 코드. 이동 과정을 상세히 볼 수 있다
+    # print(entrance, dormitory, time, tick%2) <- 이 코드를 넣으면 이동 과정을 상세히 볼 수 있다
 
 print(time)
 
