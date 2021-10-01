@@ -1,2 +1,0 @@
-(key,plaintext,cipher) = ('cipher', 'Each character on a computer is assigned a unique code.', [])
-print(list(map(lambda x, y: int(ord(y)^ord(x)), key*(len(plaintext)//len(key))+key[0:len(plaintext)%len(key)], plaintext)))
