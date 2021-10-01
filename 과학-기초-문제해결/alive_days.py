@@ -1,8 +1,10 @@
+# 현재까지 생존한 일수를 출력하기
+
 from datetime import datetime, date
 today = list(map(int,date.today().strftime("%Y,%m,%d").split(",")))
 birthday = list(map(int,input("1234/05/01과 같은 방식으로 대상의 생일을 입력하세요. 기원전은 연도 앞에 '-'를 붙입니다. : ").split("/")))
 
-def days(day):
+def days(day): # 1년 1월 1일부터 현재 날짜까지 경과한 일수를 구하 함수
     if (day[1] > 12 or day[1] < 1): raise Exception('달력에 없는 날짜입니다.')
     if (day[0] < 0): day[0] += 1
     if (day[0] == 0): raise Exception('달력에 없는 날짜입니다.')
