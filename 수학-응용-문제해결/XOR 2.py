@@ -1,3 +1,5 @@
+# 주어진 평문을 주어진 키에 XOR해서 암호문 얻기
+
 (key,plaintext) = ('cipher', 'Each character on a computer is assigned a unique code.') # 키와 평문을 동시에 입력받기
 print(list(map(lambda x, y: int(ord(y)^ord(x)), key*(len(plaintext)//len(key))+key[0:len(plaintext)%len(key)], plaintext)))
 
